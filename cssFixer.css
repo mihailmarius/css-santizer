@@ -1,4 +1,14 @@
-/* Fix the body */
+/*
+ * Script name: CSS Sanitizer
+ * Scrip URI: https://github.com/mihailmarius/css-santizer
+ * @Author: Mihail Marius
+ * Author URI: https://github.com/mihailmarius
+ * CSS Tool for fixing HTML Pages, html, body, div elements, Headings, texts and much more...
+ * Version: 0.1
+ * License: GNU General Public License, version 2
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ */
 body{
     line-height: 1;
     -moz-text-size-adjust: none;
@@ -8,7 +18,7 @@ body{
     height: 100%;
 }
 
-/* Remove margins for all elements */
+/** Remove margins for all elements */
 html, body, section, article, aside, footer, header, nav, iframe, div, span, applet, object, form, table, tfoot, thead, tbody, tr, th, td, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, label, legend, caption,  canvas, details, embed, figure, figcaption, hgroup, menu, output, ruby, summary, time, mark, audio, video{
     margin: 0;
     padding: 0;
@@ -17,19 +27,19 @@ html, body, section, article, aside, footer, header, nav, iframe, div, span, app
     -webkit-font-smoothing: antialiased;
 }
 
-/* Reset display-role for old browsers */
+/** Reset display-role for old browsers */
 main, article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-/* Colabsable table */
+/** Colabsable table */
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-/* Fix overflow for IE and bix sizing for Mozilla */
+/** Fix overflow for IE and bix sizing for Mozilla */
 hr {
     border-style: solid;
     border-width: 1px 0 0;
@@ -37,7 +47,7 @@ hr {
     height: 0;
     overflow: visible;
   }
-/* Fix typography */
+/** Fix typography */
   
 h1 { font-size: 2rem; }
 h2 { font-size: 1.5rem; }
@@ -46,9 +56,7 @@ h4 { font-size: 1.00rem; }
 h5 { font-size: 0.83rem; }
 h6 { font-size: 0.67rem; }
 
-  /* Fix text overflows 
-  Keep h1 margins consistent, even when nested. 
-  */
+/** Fix text overflows, Keep h1 margins consistent, even when nested. */
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
     margin: 0.67em 0;
@@ -66,7 +74,7 @@ sup {
   vertical-align: baseline;
 }
 
-  /* Fix images size */
+/** Fix images size */
 img, picture, svg, canvas, video {
   max-width: 100%;
   height: auto;
@@ -76,19 +84,19 @@ audio{
   width: 100%;
 }
 
-/* Fix svg overflow */
+/** Fix svg overflow */
 svg { 
   overflow: hidden; 
 }
 
-/* Fix box-sizing and padding for IE10 */
+/** Fix box-sizing and padding for IE10 */
 [type='checkbox'],
 [type='radio'] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* fix forms font size and family */
+/** fix forms font size and family */
 
 input,
 textarea,
